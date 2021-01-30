@@ -37,8 +37,8 @@ class Order(models.Model):
 			) 
 
 	customer = models.ForeignKey(Customer, on_delete= models.SET_NULL, null=True)
-	date = models.DateTimeField(auto_now_add=False, null=True, blank=True)
-	start_time = models.TimeField(auto_now=False, auto_now_add=False)
+	date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+	start_time = models.TimeField(auto_now=True, auto_now_add=False)
 	end_time = models.TimeField(auto_now=False, auto_now_add=False)
 	description1 = models.TextField(null=True)
 	description2 = models.TextField(null=True)

@@ -7,6 +7,7 @@ urlpatterns = [
 
     #------------ (CREATE URLS) ------------
     path('create_order/', views.createOrder, name="create_order"),
+    path('create_order_per_customer/<str:pk>/', views.createOrderPerCustomer, name="create_order_per_customer"),
     path('create_customer/', views.createCustomer, name="create_customer"),
    
     #------------ (UPDATE URLS) ------------
