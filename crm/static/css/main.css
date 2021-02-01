@@ -19,3 +19,6 @@ body{
 	background-color: #7CD1C0;
 }
 
+.dontwrap{
+	white-space: nowrap;
+}
